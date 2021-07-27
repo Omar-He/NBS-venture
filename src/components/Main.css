@@ -40,13 +40,13 @@
 .expanded-image {
   max-width: 90%;
   object-fit: contain;
-  max-height: 500px;
+  max-height: 400px;
   border-radius: 8px;
 }
 
 .image-desc {
   display: block;
-  padding: 20px 35px;
+  padding: 13px 25px;
   text-align: center;
 }
 

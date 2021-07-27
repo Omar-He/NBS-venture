@@ -1,6 +1,6 @@
 const clientID = "cxfEBYtywoPwbNS0RmkunuvdhxR0qxF1wtFTdWDj1Bc";
 
-export async function getImages(pageNumber = "1", searchTerm = "cat") {
+export async function getImages(pageNumber = "1", searchTerm = "nature") {
   const req = fetch(
     `https://api.unsplash.com/search/photos?page=${pageNumber}&query=${searchTerm}&client_id=${clientID}`
   );
