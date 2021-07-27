@@ -2,7 +2,8 @@ import React, { useState, useRef, useCallback } from "react";
 import "./Main.css";
 import useImages from "../hooks/useImages";
 import Modal from "./Modal/Modal";
-
+import LeftIcon from "../icons/leftIcon";
+import RightIcon from "../icons/rightIcon";
 const Main = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const { loading, images, hasMore } = useImages(pageNumber);
@@ -90,14 +91,14 @@ const Main = () => {
               disabled={images.length === targetImage.index + 1}
               onClick={nextImage}
             >
-              Next
+              <RightIcon />
             </button>
             <button
               className="prev-btn"
               disabled={0 === targetImage.index}
               onClick={prevImage}
             >
-              Prev
+              <LeftIcon />
             </button>
           </div>
         )}
