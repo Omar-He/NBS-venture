@@ -1,0 +1,97 @@
+.images-grid {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.images-grid img {
+  padding: 5px;
+  width: 250px;
+  height: 170px;
+  object-fit: contain;
+  background: #cbcbcb;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.images-grid img:hover {
+  background: rgb(12, 158, 226);
+}
+
+.loading-section {
+  font-size: 24px;
+  color: darkslateblue;
+  background: lightblue;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expanded-image {
+  max-width: 90%;
+  object-fit: contain;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+.image-desc {
+  display: block;
+  padding: 20px 35px;
+  text-align: center;
+}
+
+.next-btn {
+  padding: 26px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  background: #1ef6f7;
+  border: 3px solid #fff;
+}
+
+.next-btn:hover {
+  background: #66c90d;
+  color: #fff;
+}
+
+.prev-btn {
+  padding: 26px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  background: #1ef6f7;
+  border: 3px solid #fff;
+}
+.prev-btn:hover {
+  background: #66c90d;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .prev-btn {
+    top: 30%;
+  }
+  .next-btn {
+    top: 30%;
+  }
+}
+
+.image-details {
+  position: fixed;
+  bottom: 0;
+  background: #5c5a5aa6;
+  color: #fff;
+  width: 100%;
+}

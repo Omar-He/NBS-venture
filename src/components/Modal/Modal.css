@@ -1,0 +1,49 @@
+.bc-overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: #5c575759;
+}
+.bc-modal {
+  position: absolute;
+  inset: 40px;
+  border: 1px solid #ccc;
+  background: white;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  max-width: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  height: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+  .bc-modal {
+    height: 100%;
+    width: 100%;
+    max-width: unset;
+    padding: unset;
+  }
+}
+.bc-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.bc-modal .modal-header .modal-title {
+  font-size: 20px;
+}
+.bc-modal .modal-header .close-icon:hover {
+  color: #c54a4a;
+  cursor: pointer;
+}
+
+.modal-body {
+  height: calc(100% - 63px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
