@@ -4,6 +4,7 @@ import useImages from "../hooks/useImages";
 import Modal from "./Modal/Modal";
 import LeftIcon from "../icons/leftIcon";
 import RightIcon from "../icons/rightIcon";
+
 const Main = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const { loading, images, hasMore } = useImages(pageNumber);
@@ -73,7 +74,7 @@ const Main = () => {
       </div>
       {loading && <div className="loading-section">Loading ...</div>}
       <Modal
-        title={targetImage ? `#${targetImage.id}` : "#"}
+        title={`#${targetImage ? targetImage.id : ""}`}
         open={openModal}
         onClose={onCloseModal}
       >

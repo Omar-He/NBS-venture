@@ -11,12 +11,15 @@
   width: 250px;
   height: 170px;
   object-fit: contain;
-  background: #cbcbcb;
-  border-radius: 50px;
+  background: #eeeeee;
+  border-radius: 8px;
   cursor: pointer;
+  box-shadow: 5px 5px 15px 5px #c7c7c7;
+  border: 2px solid transparent;
 }
 .images-grid img:hover {
-  background: rgb(12, 158, 226);
+  background: #80b8d942;
+  border: 2px solid #2192d4;
 }
 
 .loading-section {
